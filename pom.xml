@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+		 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>io.waleedkhalid98.example.musicshop</groupId>
+	<artifactId>store</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>MusicShop Store</name>
+	<description>Demo project for Spring Boot</description>
+	<packaging>pom</packaging>
+
+	<properties>
+		<java.version>17</java.version>
+	</properties>
+
+	<profiles>
+		<profile>
+			<id>setup</id>
+		</profile>
+		<profile>
+			<id>local</id>
+			<activation>
+				<activeByDefault>true</activeByDefault>
+			</activation>
+		</profile>
+		<profile>
+			<id>dev</id>
+		</profile>
+		<profile>
+			<id>stage</id>
+		</profile>
+		<profile>
+			<id>prod</id>
+		</profile>
+		<profile>
+			<id>deploy</id>
+		</profile>
+	</profiles>
+</project>
